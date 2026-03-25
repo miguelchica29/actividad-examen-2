@@ -1,5 +1,5 @@
+
 public class EnvioAereo extends Envio {
-    // Constantes según la tabla
     private static final double TARIFA_BASE_POR_KM = 5000;
     private static final double RECARGO_POR_KG = 4000;
     
@@ -15,10 +15,5 @@ public class EnvioAereo extends Envio {
     @Override
     public double calcularRecargo() {
         return pesoKg * RECARGO_POR_KG;
-    }
-    
-    @Override
-    public String mostrarInformacion() {
-        return "=== ENVÍO AÉREO ===\n" + super.mostrarInformacion();
     }
 }
